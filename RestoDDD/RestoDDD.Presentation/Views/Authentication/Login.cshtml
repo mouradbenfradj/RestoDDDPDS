@@ -1,0 +1,87 @@
+﻿@model RestoDDD.Presentation.Models.LoginViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Home</title>
+    @Styles.Render("~/Content/css")
+
+    @Styles.Render("~/Content/cssindex")
+    @Scripts.Render("~/bundles/scriptsindex")
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <script>
+        $(document).ready(function () {
+            $('.slider')._TMS({
+                show: 0,
+                pauseOnHover: true,
+                prevBu: false,
+                nextBu: false,
+                playBu: false,
+                duration: 700,
+                preset: 'fade',
+                pagination: true,
+                pagNums: false,
+                slideshow: 8000,
+                numStatus: false,
+                banners: false,
+                waitBannerAnimation: false,
+                progressBar: false
+            })
+        });
+    </script>
+
+</head>
+<body>
+    <div class="bg-top">
+        <div class="bgr">
+            <section id="content">
+
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        <h4>Compte_DTO</h4>
+                        <hr />
+                        @Html.ValidationSummary(true)
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.UserName, new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.UserName)
+                                @Html.ValidationMessageFor(model => model.UserName)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Password, new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Password)
+                                @Html.ValidationMessageFor(model => model.Password)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Save" class="btn btn-default" />
+                            </div>
+                        </div>
+                    </div>
+                }
+            </section>
+            <footer>
+                <p> Developper par <a class="link" href="http://www.facebook.com/hana.messelmani.5" target="_blank" rel="nofollow">Messelmani Hana</a>  |  <a class="link" href="http://www.facebook.com/MBF6m" target="_blank" rel="nofollow">Ben Fradj Mourad</a>  |  <a class="link" href="http://www.facebook.com/arbia.chebbi.1" target="_blank" rel="nofollow">Chebbi Arbia</a>  |  <a class="link" href="http://www.facebook.com/100010935156031" target="_blank" rel="nofollow">Ouni Nessrine</a>  |  <a class="link" href="http://www.facebook.com/madridi.aymen" target="_blank" rel="nofollow">Jraydi Aymen</a></p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>

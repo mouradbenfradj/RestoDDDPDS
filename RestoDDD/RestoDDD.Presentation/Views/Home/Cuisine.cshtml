@@ -1,0 +1,101 @@
+﻿@model IEnumerable<RestoDDD.Application.Entities.Cuisine_DTO>
+
+@{
+    ViewBag.Title = "Cuisine";
+}
+
+<div class="block-2 pad-2">
+    <div class="block-4 col-3">
+        <div class="h2">
+            <h2 class="h2-line-2">A propos de notre cuisine:</h2>
+        </div>
+        <p class="center"><span class="clr-1 it-bold">Description 1</span><br>Description 2</p>
+        <div class="box-4 border-3">
+            <div>
+                <h4>Fruit de mer:</h4>
+                <div class="img-border"><img src="~/Content/images/page2-img1.jpg" alt=""></div>
+                <p class="border-2">Description</p>
+            </div>
+            <div>
+                <h4>Brunch:</h4>
+                <div class="img-border"><img src="~/Content/images/page2-img2.jpg" alt=""></div>
+                <p class="border-2">Description</p>
+            </div>
+            <div>
+                <h4>déjeuner:</h4>
+                <div class="img-border"><img src="~/Content/images/page2-img3.jpg" alt=""></div>
+                <p class="border-2">Description</p>
+            </div>
+            <div class="last">
+                <h4>Steaks & poulet:</h4>
+                <div class="img-border"><img src="~/Content/images/page2-img4.jpg" alt=""></div>
+                <p class="border-2">Description</p>
+            </div>
+        </div>
+        <div class="box-4">
+            <div>
+                <h4>Desserts:</h4>
+                <div class="img-border"><img src="~/Content/images/page2-img5.jpg" alt=""></div>
+                <p class="border-2">Description</p>
+            </div>
+            <div>
+                <h4>Menu pour enfants:</h4>
+                <div class="img-border"><img src="~/Content/images/page2-img6.jpg" alt=""></div>
+                <p class="border-2">Description</p>
+            </div>
+            <div>
+                <h4>Boulangerie:</h4>
+                <div class="img-border"><img src="~/Content/images/page2-img7.jpg" alt=""></div>
+                <p class="border-2">Description</p>
+            </div>
+            <div class="last">
+                <h4>Les soupes et les salades:</h4>
+                <div class="img-border"><img src="~/Content/images/page2-img8.jpg" alt=""></div>
+                <p class="border-2">Description</p>
+            </div>
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CuisineID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.typeCuisine)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CuisineID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.typeCuisine)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

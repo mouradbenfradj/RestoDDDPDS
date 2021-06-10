@@ -1,0 +1,7 @@
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.Domain.Test\bin\Debug\RestoDDD.Domain.Test.dll
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.Domain.Test\bin\Debug\RestoDDD.Domain.Test.pdb
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.Domain.Test\bin\Debug\RestoDDD.Domaine.dll
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.Domain.Test\bin\Debug\RestoDDD.Domaine.pdb
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.Domain.Test\obj\Debug\RestoDDD.Domain.Test.csprojResolveAssemblyReference.cache
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.Domain.Test\obj\Debug\RestoDDD.Domain.Test.dll
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.Domain.Test\obj\Debug\RestoDDD.Domain.Test.pdb

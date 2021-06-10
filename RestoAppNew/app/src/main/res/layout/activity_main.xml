@@ -1,0 +1,57 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<TextView
+    android:id="@+id/tvIsConnected"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_gravity="center_horizontal"
+    android:background="#FF0000"
+    android:textColor="#FFF"
+    android:textSize="18dp"
+    android:layout_marginBottom="5dp"
+    android:text="is connected? "
+    android:layout_weight="1" />
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:id="@+id/listViewMain2"
+        android:layout_weight="1" />
+
+    <EditText
+    android:id="@+id/etResponse"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:ems="10"
+    android:layout_marginTop="10dp"
+    android:inputType="textMultiLine"
+        android:layout_weight="1">
+    <requestFocus />
+</EditText>
+
+    <ListView
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewMain" />
+
+    <ListView
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:textAlignment="center"
+        android:id="@+id/listViewMain3" />
+
+    <LinearLayout
+        android:layout_width="278dp"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+    </LinearLayout>
+
+</LinearLayout>

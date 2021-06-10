@@ -1,0 +1,14 @@
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App\bin\Debug\RestoDDD.App.dll
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App\bin\Debug\RestoDDD.App.pdb
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App\bin\Debug\AutoMapper.dll
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App\bin\Debug\RestoDDD.Domaine.dll
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App\bin\Debug\RestoDDD.infra.dll
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App\bin\Debug\EntityFramework.dll
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App\bin\Debug\RestoDDD.Domaine.pdb
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App\bin\Debug\RestoDDD.infra.pdb
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App\bin\Debug\AutoMapper.xml
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App\bin\Debug\EntityFramework.xml
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App\obj\Debug\RestoDDD.Application.csprojResolveAssemblyReference.cache
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App\obj\Debug\RestoDDD.App.dll
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App\obj\Debug\RestoDDD.App.pdb

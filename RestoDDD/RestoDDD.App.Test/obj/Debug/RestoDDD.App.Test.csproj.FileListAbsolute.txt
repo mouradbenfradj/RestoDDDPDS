@@ -1,0 +1,11 @@
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App.Test\bin\Debug\RestoDDD.App.Test.dll
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App.Test\bin\Debug\RestoDDD.App.Test.pdb
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App.Test\bin\Debug\AutoMapper.dll
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App.Test\bin\Debug\RestoDDD.App.dll
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App.Test\bin\Debug\RestoDDD.Domaine.dll
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App.Test\bin\Debug\RestoDDD.App.pdb
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App.Test\bin\Debug\AutoMapper.xml
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App.Test\bin\Debug\RestoDDD.Domaine.pdb
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App.Test\obj\Debug\RestoDDD.App.Test.csprojResolveAssemblyReference.cache
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App.Test\obj\Debug\RestoDDD.App.Test.dll
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.App.Test\obj\Debug\RestoDDD.App.Test.pdb

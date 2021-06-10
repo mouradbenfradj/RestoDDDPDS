@@ -1,0 +1,1 @@
+C:\Users\Sniper\Documents\Visual Studio 2013\Projects\hana\RestoDDD\RestoDDD.Presentation.Tests\obj\Debug\RestoDDD.Presentation.Tests.csprojResolveAssemblyReference.cache

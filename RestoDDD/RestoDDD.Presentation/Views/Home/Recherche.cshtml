@@ -1,0 +1,46 @@
+﻿@model RestoDDD.Application.Entities.Restaurant_DTO
+
+@{
+    ViewBag.Title = "Recherche";
+}
+
+<h2>Recherche</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lieu)
+        </th>
+        <th></th>
+    </tr>
+    @*
+        @foreach (var item in Model) {
+    *@
+    <tr>
+        <td>
+            @Html.DisplayFor(model => model.Nom)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Lieu)
+        </td>
+        <td>
+            @Html.ActionLink("Voire le restaurant", "Restaurant", new { id = Model.RestaurantId }) |
+            @Html.ActionLink("Voir le Menu", "Menu", new { id = Model.RestaurantId }) |
+            @Html.ActionLink("Reserver", "Reserver", new { id = Model.RestaurantId })
+        </td>
+    </tr>
+    @*}
+    *@
+</table>

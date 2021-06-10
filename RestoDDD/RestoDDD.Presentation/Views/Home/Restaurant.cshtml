@@ -1,0 +1,163 @@
+﻿@model RestoDDD.Application.Entities.Restaurant_DTO
+
+@{
+    ViewBag.Title = "Restaurant";
+}
+
+<div class="block-2 pad-1">
+    <div class="col-1">
+        <h2 class="h2-line">Mot d'acceuil</h2>
+        <div class="box-1">
+            <div class="img-border img-indent"><img src="~/Content/images/page1-img1.jpg" alt=""></div>
+            <div class="extra-wrap">
+                <p class="it-bold p2">Slogon </p>
+                <p class="border-1">Description</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-2 left-2">
+        <h3 class="h3-line top-1">Témoignages:</h3>
+        <div class="box-2 top-2">
+            <div class="comment border-1">
+                <p><img src="~/Content/images/comment-top.png" alt=""><span class="clr-1">Vision</span> Description Vision</p>
+                <span class="clr-1"><strong>nom prenom</strong> <i>(datetime)</i><img src="~/Content/images/comment-top.png" alt=""></span>
+            </div>
+            <div class="comment border-1 top-3">
+                <p><img src="~/Content/images/comment-top.png" alt=""><span class="clr-1">Vision</span> Description Vision</p>
+                <span class="clr-1"><strong>nom prenom</strong> <i>(datetime)</i><img src="~/Content/images/comment-top.png" alt=""></span>
+            </div>
+            <a href="#" class="link-1">voire plus</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="block-3">
+        <div class="h3">
+            <h3 class="h3-line-2">Le plus délicieux:</h3>
+        </div>
+        <div class="box-3">
+            <div>
+                <div class="img-border"><img src="~/Content/images/page1-img2.jpg" alt=""></div>
+                <p class="border-2"><span class="it-bold clr-1">plat</span><br>Description du plat </p>
+
+            </div>
+            <div>
+                <div class="img-border"><img src="~/Content/images/page1-img3.jpg" alt=""></div>
+                <p class="border-2"><span class="it-bold clr-1">plat</span><br>Description du plat </p>
+            </div>
+            <div>
+                <div class="img-border"><img src="~/Content/images/page1-img4.jpg" alt=""></div>
+                <p class="border-2"><span class="it-bold clr-1">plat</span><br>Description du plat </p>
+            </div>
+            <div class="last">
+                <div class="img-border"><img src="~/Content/images/page1-img5.jpg" alt=""></div>
+                <p class="border-2"><span class="it-bold clr-1">plat</span><br>Description du plat </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <h4>Restaurant_DTO</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RestaurantId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RestaurantId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adresse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adresse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MotBienvenu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MotBienvenu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Slogon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Slogon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lieu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lieu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fax)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fax)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.region)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.region)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.specialite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.specialite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telephone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telephone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

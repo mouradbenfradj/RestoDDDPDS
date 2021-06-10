@@ -1,0 +1,109 @@
+﻿@using System.Security.Claims
+@{
+    var homeLinkText = "Recherche";
+    if (Request.IsAuthenticated)
+    {
+        var claimIdentity = User.Identity as ClaimsIdentity;
+        if (claimIdentity != null)
+        {
+            homeLinkText = "Bonjour, " + claimIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+        }
+    }
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Home</title>
+    @Styles.Render("~/Content/css")
+
+    @Styles.Render("~/Content/cssindex")
+    @Scripts.Render("~/bundles/scriptsindex")
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <script>
+        $(document).ready(function () {
+            $('.slider')._TMS({
+                show: 0,
+                pauseOnHover: true,
+                prevBu: false,
+                nextBu: false,
+                playBu: false,
+                duration: 700,
+                preset: 'fade',
+                pagination: true,
+                pagNums: false,
+                slideshow: 8000,
+                numStatus: false,
+                banners: false,
+                waitBannerAnimation: false,
+                progressBar: false
+            })
+        });
+    </script>
+
+</head>
+<body>
+    <div class="bg-top">
+        <div class="bgr">
+            <header>
+                <h1><a href="index.html"><img src="~/Content/images/logo.jpg" alt=""></a></h1>
+                <nav>
+                    <div class="navbar-header">
+
+                        @Html.ActionLink(homeLinkText, "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    </div>
+                    <ul class="nav navbar-nav">
+                        @{
+                            if (ViewBag.Id != null)
+                            {
+                                <li>@Html.ActionLink("Restaurant", "Restaurant", "Home", new { id = ViewBag.Id }, null)</li>
+                                <li>@Html.ActionLink("Cuisine", "Cuisine", "Home", new { id = ViewBag.Id }, null)</li>
+                                <li>@Html.ActionLink("Menu", "Menu", "Home", new { id = ViewBag.Id }, null)</li>
+                                <li>@Html.ActionLink("Reserver", "Reserver", "Home", new { id = ViewBag.Id }, null)</li>
+                                <li>@Html.ActionLink("Galerie", "Galerie", "Home", new { id = ViewBag.Id }, null)</li>
+                                <li>@Html.ActionLink("Contact", "Contact", "Home", new { id = ViewBag.Id }, null)</li>
+                            }
+                        }
+                        <li>
+                            @if (Request.IsAuthenticated)
+                            {
+
+                            <li>@Html.ActionLink("Se déconnecter", "Logout", "Authentication")</li>
+                            }
+                            else
+                            {
+                                <li>@Html.ActionLink("S’inscrire", "Register", "Authentication")</li>
+                                <li>@Html.ActionLink("Se connecter", "Login", "Authentication")</li>
+                            }
+                            </li>
+                        </ul>
+                    </nav>
+                    @{
+                        if (ViewBag.Id != null)
+                        {
+                            <div id="slide">
+                                <div class="slider">
+                                    <ul class="items">
+
+                                        <li><img src="~/Content/images/slider-1.jpg" alt="" /></li>
+                                        <li><img src="~/Content/images/slider-2.jpg" alt="" /></li>
+                                        <li><img src="~/Content/images/slider-3.jpg" alt="" /></li>
+
+                                    </ul>
+                                </div>
+                            </div> 
+                    }else{<div></div>}}
+                </header>
+                <section id="content">
+                    @RenderBody()
+                </section>
+                <footer>
+                    <p> Developper par <a class="link" href="http://www.facebook.com/hana.messelmani.5" target="_blank" rel="nofollow">Messelmani Hana</a>  |  <a class="link" href="http://www.facebook.com/MBF6m" target="_blank" rel="nofollow">Ben Fradj Mourad</a>  |  <a class="link" href="http://www.facebook.com/arbia.chebbi.1" target="_blank" rel="nofollow">Chebbi Arbia</a>  |  <a class="link" href="http://www.facebook.com/100010935156031" target="_blank" rel="nofollow">Ouni Nessrine</a>  |  <a class="link" href="http://www.facebook.com/madridi.aymen" target="_blank" rel="nofollow">Jraydi Aymen</a></p>
+                </footer>
+            </div>
+        </div>
+
+    </body>
+</html>

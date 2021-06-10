@@ -1,0 +1,50 @@
+﻿@model RestoDDD.Application.Entities.Cuisine_DTO
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cuisine_DTO</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CuisineID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CuisineID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.typeCuisine)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.typeCuisine)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Image)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
